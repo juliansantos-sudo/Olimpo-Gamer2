@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Videojuegos de la Historia</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+    <header>
+        <h1>🎮 El Olimpo del Gaming</h1>
+        <p>Los 10 mejores juegos en la historia de cada plataforma dominante.</p>
+    </header>
+
+    
+    <nav>
+        <ul>
+            <li><a href="./index.html" class="active">Inicio</a></li>
+            <li><a href="./pages/playstation.html">PlayStation</a></li>
+            <li><a href="./pages/xbox.html">Xbox</a></li>
+            <li><a href="./pages/nintendo.html">Nintendo</a></li>
+            <li><a href="./pages/pc.html">PC</a></li>
+        </ul>
+    </nav>
+
+    
+    <main>
+    <section>
+        <h2>Bienvenido Giga-Gamer</h2>
+        <p>Explora las selecciones definitivas que marcaron un antes y un después en la industria de los videojuegos.</p>
+        
+        
+        <h3>Tráiler y Ambiente Gamer</h3>
+        <div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; border: 2px solid #333; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);">
+            <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                src="https://www.youtube.com/embed/4xDzrJKXOOY" 
+                title="Tráiler Gaming" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <br><br>
+
+        
+        <h3>Banda Sonora Retro</h3>
+        <audio controls style="width: 100%; max-width: 400px;">
+            <source src="./assets/audio" type="audio/mpeg">
+            
+        </audio>
+    </section>
+
+    <hr style="border: 1px solid #333; margin: 30px 0;">
+
+    
+    <section>
+    <h2>Vota por tu Plataforma Favorita</h2>
+    <form id="votoForm">
+        <label for="nombre">Tu Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej. Alex" required style="width: 100%; padding: 8px; margin: 8px 0; border-radius: 4px; border: 1px solid #333; background: #222; color: #fff;"><br>
+
+        <label for="plataforma">Elige tu plataforma preferida:</label><br>
+        <select id="plataforma" name="plataforma" style="width: 100%; padding: 8px; margin: 8px 0; border-radius: 4px; border: 1px solid #333; background: #222; color: #fff;">
+            <option value="PlayStation">PlayStation</option>
+            <option value="Xbox">Xbox</option>
+            <option value="Nintendo">Nintendo</option>
+            <option value="PC">PC</option>
+        </select><br><br>
+
+        <button type="submit" style="background-color: #00ff66; color: #121212; border: none; padding: 10px 20px; font-weight: bold; border-radius: 4px; cursor: pointer;">Enviar Voto</button>
+    </form>
+    
+    <div id="mensajeConfirmacion" style="margin-top: 15px; font-weight: bold; color: #00ff66;"></div>
+
+    
+    <div style="margin-top: 30px; background: #161b22; padding: 15px; border-radius: 8px; border: 1px solid #333;">
+        <h3 style="color: #58a6ff; margin-top: 0;">📊 Resultados de la Votación</h3>
+        <ul id="listaResultados" style="list-style: none; padding: 0; color: #c9d1d9;">
+            
+        </ul>
+        <button id="btnLimpiarVotos" style="background-color: #da3633; color: #fff; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 12px; margin-top: 10px;">Reiniciar Votos</button>
+    </div>
+</section>
+</main>
+
+    
+    <footer>
+        <p>&copy; 2026 - Proyecto Académico Web</p>
+    </footer>
+
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>

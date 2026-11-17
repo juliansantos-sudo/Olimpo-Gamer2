@@ -1,0 +1,21 @@
+
+body { background-color: #fdfdfd; color: #2c2c2c; }
+header { background-color: #ffffff; border-bottom: 3px solid #e60012; padding: 20px; text-align: center; }
+header h1 { color: #e60012; margin: 0 0 10px 0; }
+main { max-width: 900px; margin: 20px auto; background-color: #ffffff; padding: 20px; box-shadow: 0 4px 15px rgba(230, 0, 18, 0.1); border: 1px solid #e0e0e0; border-radius: 8px; }
+h2 { color: #e60012; }
+table { border: 2px solid #e60012; width: 100%; border-collapse: collapse; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-top: 15px; }
+th { background-color: #e60012; color: #ffffff; padding: 12px; border: 1px solid #b3000e; text-align: left; }
+td { border: 1px solid #cccccc; padding: 12px; cursor: pointer; transition: background 0.2s; }
+tbody tr:nth-child(odd) { background-color: #fff5f5; }
+td:hover { background-color: #ffe6e6; }
+
+nav ul li a:hover, nav ul li a.active { 
+    background-color: #e60012; 
+    color: #ffffff; 
+}
+
+#detalle-juego {
+    margin-top: 25px; padding: 20px; background: #fff0f0; border: 2px solid #e60012; border-radius: 8px; display: flex; gap: 20px; align-items: center;
+}
+#detalle-juego img { width: 140px; height: auto; border-radius: 6px; border: 1px solid #ccc; }
